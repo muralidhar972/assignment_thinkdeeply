@@ -1,12 +1,13 @@
 import sys, json
+import traceback
+import pyarrow.parquet as pq
 sys.path.append("../..")
 import uvicorn,json
 from fastapi import File, UploadFile, FastAPI
 from typing import List
-from helper import save_file_ext
-
-
-
+from helper import save_upload_file,save_parquet_file
+import pandas as pd
+import traceback
 app = FastAPI()
 
 #reading json for user specific variables
@@ -36,14 +37,37 @@ async def upload(files: UploadFile = File(...)):
         file_name = file.filename.split('.')[0]
         file_ext = file.filename.split('.')[1]
         if file_ext in file_extension:
-            save_file_ext(upload_file_save_path, file_name,file_ext, contents)
-            save_file_ext(converted_file_save_path, file_name, 'parquet', contents)
-            response['status_code'] = 200
-            response['message'] = 'Upload file got saved sucessfully '+file_name
+            save_upload_file(upload_file_save_path, file_name,file_ext, contents)
+            if file_ext == 'csv':
+                table = pd.read_csv(upload_file_save_path+file_name+'.'+file_ext)
+                save_parquet_file(converted_file_save_path, file_name,table)
+                table = pq.read_table(converted_file_save_path+file_name+'.parquet')
+                output_table = table.to_pandas()
+                response['status_code'] = 200
+                response['message'] = 'Upload file got saved sucessfully '+file_name
+                print(traceback.format_exc())
+                response['data'] = output_table.head(100).to_json(orient='records')
+            elif file_ext == 'xlsx':
+                table = pd.read_excel(upload_file_save_path + file_name + '.' + file_ext)
+                save_parquet_file(converted_file_save_path, file_name, table)
+                table = pq.read_table(converted_file_save_path + file_name + '.parquet')
+                output_table = table.to_pandas()
+                response['status_code'] = 200
+                response['message'] = 'Upload file got saved sucessfully ' + file_name
+                print(traceback.format_exc())
+                response['data'] = output_table.head(100).to_json(orient='records')
+            else:
+                table = pd.read_json(upload_file_save_path + file_name + '.' + file_ext)
+                save_parquet_file(converted_file_save_path, file_name, table)
+                table = pq.read_table(converted_file_save_path + file_name + '.parquet')
+                output_table = table.to_pandas()
+                response['status_code'] = 200
+                response['message'] = 'Upload file got saved sucessfully ' + file_name
+                print(traceback.format_exc())
+                response['data'] = output_table.head(100).to_json(orient='records')
         else:
             response['status_code'] = 300
             response['message'] = 'Please upload the csv/excel/json files'
-
     except Exception as e:
         response['status_code'] = 301
         response['message'] = 'Please reach out to application admin with this error : ' +str(e)
