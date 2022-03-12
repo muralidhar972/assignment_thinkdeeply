@@ -1,7 +1,8 @@
 {
     "file_extension":["csv","xlsx","json"],
     "upload_size": 100000,
-    "upload_file_save" : "../files/uploaded_files/",
-    "converted_file_save" : "../files/converted_files/",
+    "upload_file_save" : "../data/uploaded_files/",
+    "converted_file_save" : "../data/converted_files/",
+    "log_file_save_path": "../data/loginformation/",
     "Port" : 80
 }

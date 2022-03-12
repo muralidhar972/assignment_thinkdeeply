@@ -1,0 +1,79 @@
+2022-03-12 17:21:40,753 -DEBUG - root - This is a debug message
+2022-03-12 17:21:40,753 -INFO - root - This is a info message
+2022-03-12 17:21:40,754 -WARNING - root - This is a warning message
+2022-03-12 17:21:40,754 -ERROR - root - this is a error message
+2022-03-12 17:21:40,754 -CRITICAL - root - this is a critical message
+2022-03-12 17:21:40,755 -INFO - uvicorn.error - Started server process [440107]
+2022-03-12 17:21:40,756 -INFO - uvicorn.error - Waiting for application startup.
+2022-03-12 17:21:40,756 -INFO - uvicorn.error - Application startup complete.
+2022-03-12 17:21:40,756 -INFO - uvicorn.error - Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+2022-03-12 17:21:55,260 -DEBUG - multipart.multipart - Calling on_part_begin with no data
+2022-03-12 17:21:55,261 -DEBUG - multipart.multipart - Calling on_header_field with data[42:61]
+2022-03-12 17:21:55,261 -DEBUG - multipart.multipart - Calling on_header_value with data[63:127]
+2022-03-12 17:21:55,261 -DEBUG - multipart.multipart - Calling on_header_end with no data
+2022-03-12 17:21:55,261 -DEBUG - multipart.multipart - Calling on_header_field with data[129:141]
+2022-03-12 17:21:55,261 -DEBUG - multipart.multipart - Calling on_header_value with data[143:151]
+2022-03-12 17:21:55,261 -DEBUG - multipart.multipart - Calling on_header_end with no data
+2022-03-12 17:21:55,261 -DEBUG - multipart.multipart - Calling on_headers_finished with no data
+2022-03-12 17:21:55,261 -DEBUG - multipart.multipart - Calling on_part_data with data[155:11631]
+2022-03-12 17:21:55,261 -DEBUG - multipart.multipart - Calling on_part_end with no data
+2022-03-12 17:21:55,261 -DEBUG - multipart.multipart - Calling on_end with no data
+2022-03-12 17:23:22,795 -DEBUG - multipart.multipart - Calling on_part_begin with no data
+2022-03-12 17:23:22,795 -DEBUG - multipart.multipart - Calling on_header_field with data[42:61]
+2022-03-12 17:23:22,795 -DEBUG - multipart.multipart - Calling on_header_value with data[63:127]
+2022-03-12 17:23:22,795 -DEBUG - multipart.multipart - Calling on_header_end with no data
+2022-03-12 17:23:22,795 -DEBUG - multipart.multipart - Calling on_header_field with data[129:141]
+2022-03-12 17:23:22,795 -DEBUG - multipart.multipart - Calling on_header_value with data[143:151]
+2022-03-12 17:23:22,795 -DEBUG - multipart.multipart - Calling on_header_end with no data
+2022-03-12 17:23:22,796 -DEBUG - multipart.multipart - Calling on_headers_finished with no data
+2022-03-12 17:23:22,796 -DEBUG - multipart.multipart - Calling on_part_data with data[155:49152]
+2022-03-12 17:23:22,797 -DEBUG - multipart.multipart - Calling on_part_data with data[0:81920]
+2022-03-12 17:23:22,800 -DEBUG - multipart.multipart - Calling on_part_data with data[0:262144]
+2022-03-12 17:23:22,804 -DEBUG - multipart.multipart - Calling on_part_data with data[0:262144]
+2022-03-12 17:23:22,807 -DEBUG - multipart.multipart - Calling on_part_data with data[0:262144]
+2022-03-12 17:23:22,809 -DEBUG - multipart.multipart - Calling on_part_data with data[0:262144]
+2022-03-12 17:23:22,812 -DEBUG - multipart.multipart - Calling on_part_data with data[0:262144]
+2022-03-12 17:23:22,819 -DEBUG - multipart.multipart - Calling on_part_data with data[0:262144]
+2022-03-12 17:23:22,820 -DEBUG - multipart.multipart - Calling on_part_data with data[0:2649]
+2022-03-12 17:23:22,820 -DEBUG - multipart.multipart - Calling on_part_end with no data
+2022-03-12 17:23:22,820 -DEBUG - multipart.multipart - Calling on_end with no data
+2022-03-12 17:23:41,318 -DEBUG - multipart.multipart - Calling on_part_begin with no data
+2022-03-12 17:23:41,318 -DEBUG - multipart.multipart - Calling on_header_field with data[42:61]
+2022-03-12 17:23:41,318 -DEBUG - multipart.multipart - Calling on_header_value with data[63:127]
+2022-03-12 17:23:41,318 -DEBUG - multipart.multipart - Calling on_header_end with no data
+2022-03-12 17:23:41,318 -DEBUG - multipart.multipart - Calling on_header_field with data[129:141]
+2022-03-12 17:23:41,318 -DEBUG - multipart.multipart - Calling on_header_value with data[143:151]
+2022-03-12 17:23:41,318 -DEBUG - multipart.multipart - Calling on_header_end with no data
+2022-03-12 17:23:41,318 -DEBUG - multipart.multipart - Calling on_headers_finished with no data
+2022-03-12 17:23:41,318 -DEBUG - multipart.multipart - Calling on_part_data with data[155:81920]
+2022-03-12 17:23:41,320 -DEBUG - multipart.multipart - Calling on_part_data with data[0:262144]
+2022-03-12 17:23:41,322 -DEBUG - multipart.multipart - Calling on_part_data with data[0:262144]
+2022-03-12 17:23:41,323 -DEBUG - multipart.multipart - Calling on_part_data with data[0:262144]
+2022-03-12 17:23:41,325 -DEBUG - multipart.multipart - Calling on_part_data with data[0:262144]
+2022-03-12 17:23:41,327 -DEBUG - multipart.multipart - Calling on_part_data with data[0:262144]
+2022-03-12 17:23:41,330 -DEBUG - multipart.multipart - Calling on_part_data with data[0:262144]
+2022-03-12 17:23:41,331 -DEBUG - multipart.multipart - Calling on_part_data with data[0:51801]
+2022-03-12 17:23:41,331 -DEBUG - multipart.multipart - Calling on_part_end with no data
+2022-03-12 17:23:41,331 -DEBUG - multipart.multipart - Calling on_end with no data
+2022-03-12 17:23:46,478 -DEBUG - multipart.multipart - Calling on_part_begin with no data
+2022-03-12 17:23:46,478 -DEBUG - multipart.multipart - Calling on_header_field with data[42:61]
+2022-03-12 17:23:46,478 -DEBUG - multipart.multipart - Calling on_header_value with data[63:127]
+2022-03-12 17:23:46,478 -DEBUG - multipart.multipart - Calling on_header_end with no data
+2022-03-12 17:23:46,478 -DEBUG - multipart.multipart - Calling on_header_field with data[129:141]
+2022-03-12 17:23:46,479 -DEBUG - multipart.multipart - Calling on_header_value with data[143:151]
+2022-03-12 17:23:46,479 -DEBUG - multipart.multipart - Calling on_header_end with no data
+2022-03-12 17:23:46,479 -DEBUG - multipart.multipart - Calling on_headers_finished with no data
+2022-03-12 17:23:46,480 -DEBUG - multipart.multipart - Calling on_part_data with data[155:81920]
+2022-03-12 17:23:46,485 -DEBUG - multipart.multipart - Calling on_part_data with data[0:262144]
+2022-03-12 17:23:46,490 -DEBUG - multipart.multipart - Calling on_part_data with data[0:262144]
+2022-03-12 17:23:46,494 -DEBUG - multipart.multipart - Calling on_part_data with data[0:262144]
+2022-03-12 17:23:46,497 -DEBUG - multipart.multipart - Calling on_part_data with data[0:262144]
+2022-03-12 17:23:46,501 -DEBUG - multipart.multipart - Calling on_part_data with data[0:262144]
+2022-03-12 17:23:46,504 -DEBUG - multipart.multipart - Calling on_part_data with data[0:262144]
+2022-03-12 17:23:46,505 -DEBUG - multipart.multipart - Calling on_part_data with data[0:51801]
+2022-03-12 17:23:46,505 -DEBUG - multipart.multipart - Calling on_part_end with no data
+2022-03-12 17:23:46,505 -DEBUG - multipart.multipart - Calling on_end with no data
+2022-03-12 17:24:07,151 -INFO - uvicorn.error - Shutting down
+2022-03-12 17:24:07,252 -INFO - uvicorn.error - Waiting for application shutdown.
+2022-03-12 17:24:07,253 -INFO - uvicorn.error - Application shutdown complete.
+2022-03-12 17:24:07,253 -INFO - uvicorn.error - Finished server process [440107]
